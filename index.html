@@ -18,16 +18,46 @@
 
   <section id="meta">
     <h1>METAVERSE</h1>
-    <p>INNOVATION THAT WILL SHAPE HOW WE CONNECT IN THE WORLD AN OPPORTUNITY FOR EVERYBOY.</p>
+    <p>INNOVATION THAT WILL SHAPE HOW WE <a href="https://www.google.com">CONNECT</a> IN THE WORLD AN <a href="https://www.google.com">OPPORTUNITY</a> FOR EVERYBOY.</p>
   </section>
   
   <section id="tarpas1"></section>
-   <section id="mygtukuSekcija">
+   <!-- <section id="mygtukuSekcija">
     <button id="intro">INTRO</button>
     <button id="work">WORK</button>
     <button id="about">ABOUT</button>
     <button id="contact">CONTACT</button>
-  </section>
+  </section> -->
+  
+  <section id="mygtukuSekcija">
+    <button id="intro" onclick="openTab('introContent', 'introCloseBtn')">INTRO</button>
+    <button id="work" onclick="openTab('workContent', 'workCloseBtn')">WORK</button>
+    <button id="about" onclick="openTab('aboutContent', 'aboutCloseBtn')">ABOUT</button>
+    <button id="contact" onclick="openTab('contactContent', 'contactCloseBtn')">CONTACT</button>
+</section>
+
+<section id="turinioTekstas">
+    <div id="introContent" class="tab-content">
+        <!-- Intro turinys -->
+        <p>Intro turinys...</p>
+        <button id="introCloseBtn" onclick="disableTab('introContent', 'introCloseBtn')">Išjungti Tab</button>
+    </div>
+    <div id="workContent" class="tab-content">
+        <!-- Work turinys -->
+        <p>Work turinys...</p>
+        <button id="workCloseBtn" onclick="disableTab('workContent', 'workCloseBtn')">Išjungti Tab</button>
+    </div>
+    <div id="aboutContent" class="tab-content">
+        <!-- About turinys -->
+        <p>About turinys...</p>
+        <button id="aboutCloseBtn" onclick="disableTab('aboutContent', 'aboutCloseBtn')">Išjungti Tab</button>
+    </div>
+    <div id="contactContent" class="tab-content">
+        <!-- Contact turinys -->
+        <p>Contact turinys...</p>
+        <button id="contactCloseBtn" onclick="disableTab('contactContent', 'contactCloseBtn')">Išjungti Tab</button>
+    </div>
+</section>
 </main>
 </body>
 </html>

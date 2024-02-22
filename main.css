@@ -75,6 +75,17 @@ body::after {
 >h1{
     font-size: 45px; 
 }
+>p{
+    margin-bottom: 50px;
+    >a {
+        text-decoration: underline dotted; /* Trumpesnis įrašas, kuris apjungia abu savybės nustatymus */
+        display: inline-block; /* Leidžia efektyviai taikyti padding */
+        color: white;
+    }
+    >a:hover{
+        color: rgb(105, 105, 221);
+    }
+}
 }
 
 #tarpas1 {
@@ -104,6 +115,9 @@ body::after {
         color: white;
         border-radius: 5px 0 0 5px;
     }
+    >button#intro:hover{
+        background-color: rgba(128, 128, 128, 0.493);
+    }
     >button#work{
        
         height: 40px;
@@ -112,6 +126,9 @@ body::after {
         background-color: transparent;
         color: white;
     }
+    >button#work:hover{
+        background-color: rgba(128, 128, 128, 0.493);
+    }
     >button#about{
        
         height: 40px;
@@ -119,6 +136,9 @@ body::after {
         border: 2px solid white;
         background-color: transparent;
         color: white;
+    }
+    >button#about:hover{
+        background-color: rgba(128, 128, 128, 0.493);
     }
     >button#contact{
        
@@ -129,7 +149,17 @@ body::after {
         color: white;
         border-radius: 0 5px 5px 0;
     }
+    >button#contact:hover{
+        background-color: rgba(128, 128, 128, 0.493);
+    }
 }
+
+.tab-content {
+    >p{
+        color: white;
+    }
+}
+
 
 
 
@@ -147,5 +177,54 @@ body::after {
         width: 40px;
     }
 
+    #mygtukuSekcija{
+        display: flex;
+        flex-direction: column;
+        >button#intro{
+       
+            height: 40px;
+            width: 100%;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px 5px 0 ;
+        }
+        >button#intro:hover{
+            background-color: rgba(128, 128, 128, 0.493);
+        }
+        >button#work{
+           
+            height: 40px;
+            width: 100%;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+        }
+        >button#work:hover{
+            background-color: rgba(128, 128, 128, 0.493);
+        }
+        >button#about{
+           
+            height: 40px;
+            width: 100%;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+        }
+        >button#about:hover{
+            background-color: rgba(128, 128, 128, 0.493);
+        }
+        >button#contact{
+            height: 40px;
+            width: 100%;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 0 0 5px 5px;
+        }
+        >button#contact:hover{
+            background-color: rgba(128, 128, 128, 0.493);
+        }
+    }
 
 }
