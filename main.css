@@ -1,0 +1,58 @@
+body {
+    /* Nustatykite fono paveikslėlio URL ir kitus stilius */
+    background-image: url('resources/bg.jpg');
+    background-size: cover; /* Užtikrina, kad paveikslėlis užimtų visą puslapio plotį */
+    background-position: center; /* Centruoja paveikslėlį horizontaliai ir vertikaliai */
+    background-attachment: fixed;  /* Užfiksuoja fono paveikslėlį, kad jis nepaslenktų */
+    /* Jei norite nustatyti fono spalvą, jei paveikslėlis nepasiekiamas arba nepakrautas: */
+    /* background-color: #f0f0f0;  Pavyzdinė spalva */
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('resources/bg-overlay.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Užtikrina, kad "overlay" būtų po pagrindiniu turiniu */
+}
+
+#metaLogo {
+    position: relative;
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+>img{
+    width: 100%;
+    height: auto;
+}
+}
+
+
+
+#meta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+>h1{
+    font-size: 45px; 
+}
+}
+
+
+@media (min-width: 769px){
+
+}
